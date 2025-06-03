@@ -1,19 +1,19 @@
 import Student from "../models/student.js";
 
-export function getStudentsSync(req, res){
+// export function getStudentsSync(req, res){
 
-	Student.find()
-		.then(
-			(students) => {
-				res.json(students);
-			}
-	)
-		.catch(() => {
-			res.json({
-				message: "Failed to fetch students",
-			});
-		});
-}
+// 	Student.find()
+// 		.then(
+// 			(students) => {
+// 				res.json(students);
+// 			}
+// 	)
+// 		.catch(() => {
+// 			res.json({
+// 				message: "Failed to fetch students",
+// 			});
+// 		});
+// }
 
 export async function getStudents(req,res){
 	try {
