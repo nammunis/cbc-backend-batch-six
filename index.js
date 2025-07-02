@@ -40,7 +40,8 @@ app.use(
 )
 
 
-const connectionString = process.env.MONGO_URI
+const connectionString = "mongodb+srv://nammunis:123@cluster0.nba1slw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
 
 
 
